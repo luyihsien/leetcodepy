@@ -42,9 +42,8 @@ class Solution:
 
         # dummy 作为返回结果#指標值與naxt 交給head來跑 而a=100000000 b=100000000 a is b  True故不只值相同記憶體也同#當包成ListNode也會同，but跟此處可能不太一樣狀況
         dummy = head = ListNode(int(sums[0]))
-        for i in range(1, len(sums)):
-        #for i in sums:
-            head.next = ListNode(int(sums[i]))
-            #ListNode(int(sums))
+        #for i in range(1, len(sums)):
+        for i in sums:
+            head.next = ListNode(int(sums))
             head = head.next
         return dummy
