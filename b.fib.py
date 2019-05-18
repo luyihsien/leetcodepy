@@ -53,4 +53,3 @@ def fib2(n):
 
 
 print(fib2(7))
-def fib3(n):

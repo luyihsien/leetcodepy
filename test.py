@@ -6,6 +6,17 @@ print(0)
 a={1:'2',3:'4'}
 if 1 in a:#for i in a亦同#https://www.youtube.com/watch?v=CjYKrbq8BCw#驗的是key不是整塊或value
     print('key is'+'\t' +str(1)+'\t'+"value is"+a[1])
+def b():#函數可以沒參數
+    print('b')
+b()
+class A:
+    a=4
+    def b():
+        print('b')#method不能沒有參數print('b')
+#內部即使有錯，在未呼叫執行時亦未即時出現error
+A.b()
+A().b()#實體屬性不能用，but class屬性能#猜可能是怕訂同樣會有衝突
+#一旦錯了就不再向下執行直議程式
 '''
 myList = []
 for i in range(10):

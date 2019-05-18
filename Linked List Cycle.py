@@ -5,10 +5,14 @@ class ListNode:
         self.next = None
 
 class Solution:
+    #定在外面的變數可被class直接調用屬性，亦可被創造的物件使用A().a A.a
+    #訂在__init__的variable只能被物件使用A().a
     # @param head, a ListNode
     # @return a boolean
-    #self==hasCycle(head)
-    def hasCycle(self, head):#hasCycle(head)被當self傳入使用同func()使用()內參數
+    #self==Solution()<誤>self==hasCycle(head)
+    def hasCycle(self, head):#hasCycle(head)被當self傳入同使用func()使用()內參數來做運算
+        # 閉包函數內的內部函數可以使用外部函數的參數，內部函數使用內與外部函數參數運算完回傳值
+        #函數or變數or class的object 都可看做object，都是被一自訂名字指向
         if head == None or head.next == None:#while if等等判別或非None or 0則為True
             return False
         slow = fast = head
@@ -21,4 +25,4 @@ class Solution:
 
 head=ListNode(5)
 head.next(ListNode(4))
-head.next(ListNode(3))
+#head.next(ListNode(3))#誤 這樣會複寫原本的head.next#即是將ListNode(4)變成ListNode(3)
