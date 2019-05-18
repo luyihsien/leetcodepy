@@ -17,5 +17,10 @@ class Solution:
                 dict[s[i]][1] = i
         if dict['('][0] == dict[')'][0] and dict['{'][0] == dict['}'][0] and dict['['][0] == dict[']'][0]:
             if dict['('][1] < dict[')'][1] and dict['{'][1] < dict['}'][1] and dict['{'][1] == dict['}'][1]
+             return True
+            else:
+                return False
+        else:
+            return False
 '''
 
