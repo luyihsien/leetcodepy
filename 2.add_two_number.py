@@ -19,10 +19,12 @@ class Solution:
             list2.reverse()
         i=0
         if len(list1)<len(list2):
-            if (len(list2) - len(list1) - 1)>=i:
+            a=len(list2)-len(list1)
+            if a>=i:
                 head=ListNode(list2[i])
                 i=i+1
-                head.next=ListNode(list2[1])
+                head.next=ListNode(list2[i])
+
 
         #Q:1.Linked list的len是否相同2.倒過來以後0會不會有影響
             #return new_head2
