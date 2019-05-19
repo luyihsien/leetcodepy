@@ -23,3 +23,39 @@
 class Solution:
     def lastStoneWeight(self, stones: List[int]) -> int:
 '''
+a=[2,2,2,3,3]
+b=[1,3,2,4,5,9,7]
+a.remove(max(a))#一次只移一個
+a.remove(max(a))
+#print(a)
+'''
+class Solution:
+    def lastStoneWeight(self, stones):
+        while(len(stones)>1):
+            y=max(stones)
+            stones.remove(y)
+            print(stones)
+            x=max(stones)
+            stones.remove(x)
+            print(stones)
+            if x<y:
+                stones.append(y-x)
+            print(stones)
+        return stones[0]
+print(Solution().lastStoneWeight(b))
+'''
+
+
+class Solution:
+    def lastStoneWeight(self, stones):
+        while (len(stones) > 1):
+            y = max(stones)
+            stones.remove(y)
+            x = max(stones)
+            stones.remove(x)
+            if x < y:
+                stones.append(y - x)
+        if len(stones) == 1:
+            return stones[0]
+        elif len(stones) == 0:
+            return 0
