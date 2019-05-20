@@ -5,7 +5,7 @@ class Solution:
         for i in range(len(s)):
             if s[i] in dict:
                 dict[s[i]][0]=dict[s[i]][0]+1
-
+#對稱型，一左立馬一右型，BUT兩個都有就掛了...
 '''
 class Solution:
     def isValid(self, s):
