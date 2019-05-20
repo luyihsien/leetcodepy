@@ -45,7 +45,7 @@ class Solution:
         return len(nums)
 '''
 a=[1,2,4]
-for i in range(len(a)):#IndexError: list index out of range
+for i in a:#IndexError: list index out of range
     print(i)#[1,2,4]
     a.remove(a[i])
     print(a)
