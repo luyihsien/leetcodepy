@@ -3,12 +3,12 @@ b=6
 for i in range(b):#寫下去時b就已經定了，不會跟著改
     print(b-2)
     b=b-2
-#4 2 0 -2 -4 -6
+#4 2 0 -2 -4 -6#還是原來的6次
 class Solution:
     def removeElement(self, nums, val):
         while val in nums:
             nums.remove(val)
-        return nums,len(nums)
+        return len(nums)
 
 
 
