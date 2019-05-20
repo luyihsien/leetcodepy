@@ -1,13 +1,15 @@
 #error
 class Solution:
     def removeElement(self, nums, val):
-        for i in nums:
-            if i==val:
-                print(i)
-                nums.remove(i)
+        for i in range(len(nums)):
+            if nums[i]==val:
+                print('座標'+str(i))
+                print(nums[i])
+                nums.remove(nums[i])
                 print(nums)
             else:
-                print(i)
+                print('座標'+str(i))
+                print(nums[i])
                 print(nums)
         return len(nums)
 print(Solution().removeElement([0,1,2,2,3,0,4,2],2))
