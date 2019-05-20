@@ -1,0 +1,1 @@
+#append(新值)與pop()即是stack後進先出的運用
