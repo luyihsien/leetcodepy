@@ -23,6 +23,8 @@ class Solution:
         else:
             return False
 '''
+
+
 class Solution:
     def isValid(self, s):
         """
@@ -30,5 +32,5 @@ class Solution:
         :rtype: bool
         """
         while '[]' in s or '()' in s or '{}' in s:
-            s = s.replace('[]','').replace('()','').replace('{}','')
+            s = s.replace('[]','').replace('()','').replace('{}','')#順序換掉沒差
         return len(s) == 0
