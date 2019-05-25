@@ -1,9 +1,9 @@
-'''
+
 class Solution:
     def maxSubArray(self, nums):
         sum=float('-inf')
-        head=0
         for i in range(len(nums)):
+            head=0
             for j in range(i,len(nums)):
                 head+=nums[j]
                 if head>sum:
@@ -29,3 +29,4 @@ class Solution(object):
                 print('m',m)
         return m
 print(Solution().maxSubArray([-2,1,-3,4,-1,2,1,-5,4]))#17 but正確答案為6
+'''
