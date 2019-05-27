@@ -7,9 +7,13 @@ for i in range(b):#寫下去時b就已經定了，不會跟著改
 class Solution:
     def removeElement(self, nums, val):
         while val in nums:
-            nums.remove(val)
+            nums.remove(val)#與nums此list座標無關的操作
         return len(nums)
-
+a=[1,2]
+a.pop()
+print(a)
+b=''.join([1,'2','3'])
+print(b)
 
 
 

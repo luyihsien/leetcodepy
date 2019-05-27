@@ -26,3 +26,7 @@ class Solution:
 a=[1,2,3]
 a=a.append(4)
 print(a)#None
+a=123
+len(a)
+for i in a:
+    print(a[i])
