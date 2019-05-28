@@ -5,9 +5,8 @@ class Solution:
                 print('A[i-1]',A[i-1],'A[i]',A[i])
                 B=A[i:len(A)]
                 C=A[i:len(A)]
-                for j in C:
-                    if A[i-1]==C[j]:
-                        C.remove(A[i-1])
+                while A[i-1] in C:
+                    C.remove(A[i-1])
                 m=max(C)
                 print('B',B)
                 print('len(B)',len(B))
