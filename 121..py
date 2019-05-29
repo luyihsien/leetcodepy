@@ -13,7 +13,7 @@ class Solution:
 TypeError: 'int' object is not subscriptable
 Line 8 in maxProfit (Solution.py)
 '''
-a=[1,2,3]
+#a=[1,2,3]
 #print(a.pop().pop())#Error:int object has no attribute 'pop'
 #print(a.remove(1).remove(2))#AttributeError: 'NoneType' object has no attribute 'remove'
 #print(a.remove(3))#None
@@ -22,7 +22,7 @@ a=[1,2,3]
 #print(a.pop())
 #print(a)
 
-print(a)
+#print(a)
 class Solution(object):
     def maxProfit(self, prices):
         """
@@ -36,4 +36,24 @@ class Solution(object):
             opt[i] = max(opt[i-1]+prices[i]-prices[i-1], 0)
             print(opt)
         return max(opt)
-Solution().maxProfit([10,3,2,6,9,7,1,2,5,2,0,9,7,100])
+print(Solution().maxProfit([10,3,2,6,9,7,1,2,5,2,0,9,7,100]))
+#二刷 0529
+class Solution:
+    def maxProfit(self, prices):
+        a=0
+        for i in range(len(prices)):
+            for j in range(i+1,len(prices)):
+                if j-i>a:
+                    print(j-i)
+                    a=j-i
+        return a
+class Solution:
+    def maxProfit(self, prices):
+        a=0
+        for i in range(len(prices)):
+            for j in range(i+1,len(prices)):
+                #if j-i>a:
+                if prices[j]-prices[i]>a:
+                    a=prices[j]-prices[i]
+        return a
+print(Solution().maxProfit([7,1,5,3,6,4]))
