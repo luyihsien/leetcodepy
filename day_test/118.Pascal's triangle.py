@@ -57,10 +57,12 @@ class Solution:
             return [[1],[1,1]]
         m=[[1],[1,1]]
         while numRows>2:
-            m.extend([m[-1]])
-            for i in range(len(m[-2])-1):#TypeError: object of type 'int' has no len()
-                m[-1].insert(i+1,m[-1][i]+m[-1][i+1])
-                numRows-=1
+            l=m[:][-1]
+            print(l)
+            for i in range(len(l)-1):#TypeError: 'int' object is not subscriptable#TypeError: object of type 'int' has no len()
+                l.insert(i+1,l[-1][i]+l[-1][i+1])
+            numRows-=1
+            m.extend(l)
             return m
 '''
 [[1], [1, 2, 1], [1, 2, 1]]
@@ -68,7 +70,7 @@ class Solution:
 
 
 
-        '''
+'''
         else:
             l=self.generate(numRows-1)
             for i in range(len(l[-1])-1):
