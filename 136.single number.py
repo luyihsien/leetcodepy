@@ -29,6 +29,21 @@ class Solution:
                 else:
                     return b
         return nums[0]
+
 '''
 超出时间限制
 '''
+class Solution:#正解1
+    def singleNumber(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        a = 0
+        for num in nums:
+            a = a ^ num
+        return a
+class Solution:#正解2
+    def singleNumber(self, nums):
+        ## 解法一 利用set的唯一性
+        return sum(set(nums)) * 2 - sum(nums)
