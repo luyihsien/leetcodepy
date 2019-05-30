@@ -1,7 +1,13 @@
 print(len([1,1]))#2
 a=[1]
 a.extend([[1,1]])
+m=[1,[1,1]]
+m.extend([[1,2,1]])
+print(m)
 print(a)
+b=[1,1]
+a=[1,1]
+print(a is b)
 class Solution:
     def generate(self, numRows):
         if numRows==1:
@@ -44,7 +50,7 @@ class Solution:
             for i in range(l[-1]):
                 a=l[:][-1]
                 a.insert(i,l[-1][i]+l[-1][i+1])
-                l.extend([a])
+                l.extend([[a]])
             return
 class Solution:
 
@@ -57,17 +63,20 @@ class Solution:
             return [[1],[1,1]]
         m=[[1],[1,1]]
         while numRows>2:
-            l=m[:][-1]
-            print(l)
+            print('m',m)
+            l=m[-1]
+            l=l[:]
+            print('l',l)
             for i in range(len(l)-1):#TypeError: 'int' object is not subscriptable#TypeError: object of type 'int' has no len()
-                l.insert(i+1,l[-1][i]+l[-1][i+1])
+                l.insert(i+1,l[i]+l[i+1])
+                print('l insert後',l,'m',m)
+                m.extend([l])
+                print(m)
             numRows-=1
-            m.extend(l)
             return m
 '''
 [[1], [1, 2, 1], [1, 2, 1]]
 '''
-
 
 
 '''
