@@ -6,12 +6,13 @@ class Solution:
         #m=0
         m=float('-inf')
         for i in range(len(prices)):
-            if prices[i]>low:
+            print(i)
+            #if prices[i]>low:#最小的給low
+            if prices[i]<low:
                 low=prices[i]
-                print(low)
+                print('low',low)
             if m<prices[i]-low:
                 m=prices[i]-low
-                print(m)
         return m
 print(Solution().maxProfit([7,1,5,3,6,4]))
 '''
