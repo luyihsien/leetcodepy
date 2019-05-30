@@ -70,10 +70,10 @@ class Solution:
             for i in range(len(l)-1):#TypeError: 'int' object is not subscriptable#TypeError: object of type 'int' has no len()
                 l.insert(i+1,l[i]+l[i+1])
                 print('l insert後',l,'m',m)
-                m.extend([l])
+                m.extend([l])#m.extend(l) 不對
                 print(m)
             numRows-=1
-            return m
+        return m#為何只執行一次?縮徘位置不對
 '''
 [[1], [1, 2, 1], [1, 2, 1]]
 '''
@@ -90,7 +90,7 @@ class Solution:
             return a
         '''
 
-print(Solution().generate(3))#[[1], [2, 1, 1], [2, 1, 1]]
+print(Solution().generate(4))#[[1], [2, 1, 1], [2, 1, 1]]
 '''
 输入
 5
