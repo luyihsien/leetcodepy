@@ -53,7 +53,11 @@ class Solution:
             return [[1],[1,1]]
         m=[[1],[1,1]]
         while numRows>2:
-            for i in range(len(m[-1])):
+            a=m[:]
+            b=a[-1]
+            for i in range(len(b)-1):
+
+
 
         '''
         else:
