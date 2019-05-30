@@ -33,7 +33,7 @@ class Solution:
             return False
         if p.val != q.val:
             return False
-        return self.isSameTree(p.left, q.left) and self.isSametree(p.right, q.right)
+        return self.isSameTree(p.left, q.left) and self.isSametree(p.right, q.right)#T 打成 t 故報錯，不然邏輯完全正確
 '''
 正確解法如下
 class Solution:
