@@ -1,8 +1,10 @@
+'''
 class Solution:
     def singleNumber(self, nums):
         nums.sort()
         for i in nums:
             if nums[i]==nums[i+1]
+'''
 class Solution:
     def singleNumber(self, nums):
         while len(nums) > 1:
@@ -29,7 +31,7 @@ class Solution:
                 else:
                     return b
         return nums[0]
-
+print(Solution().singleNumber([1,2,1,2,3,3,4,4,5,6,5,7,7,6,8]))
 '''
 超出时间限制
 '''
@@ -47,3 +49,8 @@ class Solution:#正解2
     def singleNumber(self, nums):
         ## 解法一 利用set的唯一性
         return sum(set(nums)) * 2 - sum(nums)
+'''
+Bitwise Exclusive Or
+a ^ b
+xor(a, b)
+'''
