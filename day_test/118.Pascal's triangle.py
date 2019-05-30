@@ -53,10 +53,11 @@ class Solution:
             return [[1],[1,1]]
         m=[[1],[1,1]]
         while numRows>2:
-            a=m[:]
-            b=a[-1]
-            for i in range(len(b)-1):
-
+            m.extend(m[-1])
+            for i in range(len(m[-1])-1):
+                m[-1].insert(i+1,m[-1][i]+m[-1][i+1])
+                numRows-=1
+            return m
 
 
         '''
