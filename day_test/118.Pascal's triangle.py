@@ -1,4 +1,7 @@
 print(len([1,1]))#2
+a=[1]
+a.extend([[1,1]])
+print(a)
 class Solution:
     def generate(self, numRows):
         if numRows==1:
@@ -54,9 +57,8 @@ class Solution:
             return [[1],[1,1]]
         m=[[1],[1,1]]
         while numRows>2:
-            m.extend(m[[-1]])
-            print(m)
-            for i in range(len(m[-1])-1):#TypeError: object of type 'int' has no len()
+            m.extend([m[-1]])
+            for i in range(len(m[-2])-1):#TypeError: object of type 'int' has no len()
                 m[-1].insert(i+1,m[-1][i]+m[-1][i+1])
                 numRows-=1
             return m
