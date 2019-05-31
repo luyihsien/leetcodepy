@@ -67,5 +67,6 @@ class Solution:
         maxprofit = 0
         for i in range(len(prices)):
             if prices[i] < low: low = prices[i]
-            maxprofit = max(maxprofit, prices[i] - low)
+            else:
+                maxprofit = max(maxprofit, prices[i] - low)
         return maxprofit

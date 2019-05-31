@@ -65,13 +65,19 @@ class Solution:
         while numRows>2:
             print('m',m)
             l=m[-1]
-            l=l[:]
+            l=l[:]#淺copy，故無法先l=m[:]再l=l[-1]
             print('l',l)
             for i in range(len(l)-1):#TypeError: 'int' object is not subscriptable#TypeError: object of type 'int' has no len()
-                l.insert(i+1,l[i]+l[i+1])
+                l=[]
+                if i==0:
+                    l.insert(0,1)
+                l.insert(i + 1, l[i] + l[i + 1])
+                if i==numRows-1:
+                    l.insert(numRows-1,1)
+
                 print('l insert後',l,'m',m)
                 m.extend([l])#m.extend(l) 不對
-                print(m)
+                print('m',m)
             numRows-=1
         return m#為何只執行一次?縮徘位置不對
 '''
