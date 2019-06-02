@@ -12,7 +12,7 @@ class Solution(object):
         #print(n)
         for i in range(2,len(n)):
             for j in range(len(n[i-1])-1):
-                n[i][j]=n[i-1][j]+n[i-1][j+1]
+                n[i][j+1]=n[i-1][j]+n[i-1][j+1]
         print(n)
         return n
 #[[1], [1, 1], [2, 0, 1], [2, 1, 0, 1], [3, 1, 1, 0, 1]]
