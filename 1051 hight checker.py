@@ -17,6 +17,15 @@ for i in range(len(a)):
     if a[i]!=b[i]:
         c+=1
 class Solution:
+    def heightChecker(self, heights):
+        b=heights.copy()
+        heights.sort()
+        c=0
+        for i in range(len(b)):
+            if heights[i]!=b[i]:
+                c+=1
+        return c
+class Solution:
     def prevPermOpt1(self, A):
         for i in range(len(A)-1,-1,-1):#最尾
             for j in range(i-1,-1,-1):#忘記打range#從尾一路回頭
