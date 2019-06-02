@@ -15,8 +15,7 @@ class Solution:
             if a != b:
                 if b in nums:
                     return b
-                else:
-                    return a
+
         return nums[0]
 class Solution:
     def singleNumber(self, nums):

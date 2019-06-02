@@ -15,5 +15,4 @@ class Solution(object):
                 n[i][j+1]=n[i-1][j]+n[i-1][j+1]
         print(n)
         return n
-#[[1], [1, 1], [2, 0, 1], [2, 1, 0, 1], [3, 1, 1, 0, 1]]
 Solution().generate(5)
