@@ -19,8 +19,8 @@ class Solution:
 '''
 成功
 显示详情 
-执行用时 : 1636 ms, 在Single Number的Python提交中击败了5.05% 的用户
-内存消耗 : 13.5 MB, 在Single Number的Python提交中击败了30.26% 的用户
+执行用时 : 64 ms, 在Single Number的Python3提交中击败了61.98% 的用户
+内存消耗 : 14.5 MB, 在Single Number的Python3提交中击败了94.72% 的用户
 '''
 class Solution:
     def singleNumber(self, nums):
