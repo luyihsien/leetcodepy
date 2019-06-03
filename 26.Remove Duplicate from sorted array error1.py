@@ -53,3 +53,15 @@ print(Solution().removeDuplicates([1,1,2]))
 预期结果
 [1,2]
 '''
+class Solution():
+    def removeDuplicates(self, nums):
+        if not nums:
+            return 0
+        count=0
+        for i in range(len(nums)):
+            if nums[count]!=nums[i]:
+                count+=1
+                nums[count]=nums[i]
+        print(nums)
+        return count+1
+print(Solution().removeDuplicates([1,1,2]))
