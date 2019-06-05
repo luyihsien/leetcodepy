@@ -1,20 +1,3 @@
-#https://www.youtube.com/watch?v=gwetZc-7Gg4&list=PLNTlJhYDV6sN8cH0bgaaVwsoF7EVHD_R6&index=16
-#參考program diary->pretest2hr->part1 counting.py
-def test(number):
-    def test_in(number_in):
-        print('in test_in 函數,number_in is %d',number_in)
-        return number+number_in
-    return test_in
-ret=test(20)#不印東西，傳了20
-print(ret(100))
-print(ret(200))
-'''
-結果
-in test_in 函數,number_in is %d 100
-120
-in test_in 函數,number_in is %d 200
-220
-'''
 class Solution():
     def counting(self,urls):
         dict = {}
@@ -33,7 +16,7 @@ class Solution():
             return self.sortedDictValues3(dict)  # {'a.txt': 1}#NameError: name 'sortedDictValues3' is not defined
 
     def sortedDictValue(self,dict):
-        print(dict)
+        return dict
 if __name__ == '__main__':
     urls = [
         "http://www.google.com/a.txt",
@@ -45,5 +28,4 @@ if __name__ == '__main__':
         "http://yahoo.com/123/000/c.jpg",
         "http://gliacloud.com/haha.png",
     ]
-
-print(Solution.counting(urls))
+print(Solution().sortedDictValue(urls))
