@@ -73,15 +73,18 @@ class Solution:
                 left = i + 1
                 print('left',left)
                 # right = len(num) - 1
-                result_idx = self.twoSum(num[left:], -num[i])
+                result_idx = self.twoSum(num[left:], -num[i])#傳送位址
                 print("result_idx",result_idx)#index
                 for each_idx in result_idx:# 数组后方切片后给twoSum
                     each_result = [num[i], num[each_idx[0]+(i+1)], num[each_idx[1]+(i+1)]]
-                    print(each_result)
+                    print('each result',each_result)
+                    print('res',res)
                     if str(each_result) not in res:
                         res[str(each_result)] = each_result
         for value in res.values():
             result.append(value)
+            print(value)
+        print(result)
         return result
 print(Solution().threeSum([-4,-3,-3,-3,1,2,3]))
 '''
