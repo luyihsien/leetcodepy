@@ -54,14 +54,17 @@ class Solution:
 版权声明：本文为博主原创文章，转载请附上博文链接！
 
 '''
+a=[[1,2],[3,4]]
+print('a[0]',a[0])#[1,2]
+print('a[0:1]',a[0:1])#[[1,2]]
 class Solution:
     def twoSum(self, nums, target):
         idxDict = dict()
         idx_list = []
-        for idx, num in enumerate(nums):
+        for idx, num in enumerate(nums):#0至len(nums)-1，視同所有座標，每次增1;每項走一遍
             if target - num in idxDict:
-                idx_list.append([idxDict[target - num], idx])
-            idxDict[num] = idx
+                idx_list.append([idxDict[target - num], idx])#先 後
+            idxDict[num] = idx#idxDict[數字]=座標
         return idx_list
 
     def threeSum(self, num):
@@ -73,20 +76,22 @@ class Solution:
                 left = i + 1
                 print('left',left)
                 # right = len(num) - 1
-                result_idx = self.twoSum(num[left:], -num[i])#傳送位址
+                result_idx = self.twoSum(num[left:], -num[i])#傳送位址#要是此class的實例才能用性質
                 print("result_idx",result_idx)#index
                 for each_idx in result_idx:# 数组后方切片后给twoSum
                     each_result = [num[i], num[each_idx[0]+(i+1)], num[each_idx[1]+(i+1)]]
                     print('each result',each_result)
                     print('res',res)
-                    if str(each_result) not in res:
+                    if str(each_result) not in res:#因list不能直接當key
                         res[str(each_result)] = each_result
-        for value in res.values():
+                    print('加入字典後 res',res)
+        for value in res.values():#將所有key對應的value跑一遍
             result.append(value)
             print(value)
         print(result)
         return result
-print(Solution().threeSum([-4,-3,-3,-3,1,2,3]))
+print('two sum for 7',Solution().twoSum([1,2,5,2],7))#[[1, 2], [2, 3]]
+print(Solution().threeSum([-4,-3,-3,-3,0,1,2,3,4]))#-4之下 1座標4 3座標6 又 0座標3 4座標7
 '''
 print(Solution().threeSum([-4,-3,-3,-3,1,2,3]))
 left 1
@@ -96,4 +101,39 @@ left 2
 result_idx [[2, 3]]
 [-3, 1, 2]
 [[-4, 1, 3], [-3, 1, 2]]
+'''
+def a():
+    print(b(1,2))
+def b(x,y):
+    return x+y
+a()#3
+'''
+a[0] [1, 2]
+a[0:1] [[1, 2]]
+two sum for 7 [[1, 2], [2, 3]]
+left 1
+result_idx [[4, 6], [3, 7]]
+each result [-4, 1, 3]
+res {}
+加入字典後 res {'[-4, 1, 3]': [-4, 1, 3]}
+each result [-4, 0, 4]
+res {'[-4, 1, 3]': [-4, 1, 3]}
+加入字典後 res {'[-4, 1, 3]': [-4, 1, 3], '[-4, 0, 4]': [-4, 0, 4]}
+left 2
+result_idx [[3, 4], [2, 5]]
+each result [-3, 1, 2]
+res {'[-4, 1, 3]': [-4, 1, 3], '[-4, 0, 4]': [-4, 0, 4]}
+加入字典後 res {'[-4, 1, 3]': [-4, 1, 3], '[-4, 0, 4]': [-4, 0, 4], '[-3, 1, 2]': [-3, 1, 2]}
+each result [-3, 0, 3]
+res {'[-4, 1, 3]': [-4, 1, 3], '[-4, 0, 4]': [-4, 0, 4], '[-3, 1, 2]': [-3, 1, 2]}
+加入字典後 res {'[-4, 1, 3]': [-4, 1, 3], '[-4, 0, 4]': [-4, 0, 4], '[-3, 1, 2]': [-3, 1, 2], '[-3, 0, 3]': [-3, 0, 3]}
+left 5
+result_idx []
+[-4, 1, 3]
+[-4, 0, 4]
+[-3, 1, 2]
+[-3, 0, 3]
+[[-4, 1, 3], [-4, 0, 4], [-3, 1, 2], [-3, 0, 3]]
+[[-4, 1, 3], [-4, 0, 4], [-3, 1, 2], [-3, 0, 3]]
+3
 '''
