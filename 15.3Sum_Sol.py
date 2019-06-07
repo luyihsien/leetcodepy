@@ -20,3 +20,37 @@ class Solution:
                 else:
                     right -= 1
         return L
+'''
+class Solution:
+    def twoSum(self, nums, target):
+        idxDict = dict()
+        idx_list = []
+        for idx, num in enumerate(nums):
+            if target - num in idxDict:
+                idx_list.append([idxDict[target - num], idx])
+            idxDict[num] = idx
+        return idx_list
+
+    def threeSum(self, num):
+        num.sort()
+        res = dict()
+        result = []
+        for i in range(len(num)-2):  # 遍历至倒数第三个，后面两个指针
+            if (i == 0 or num[i] > num[i-1]) and num[i] <= 0:  # 只检索不重复并且目标数（第一个数）小于等于0的情况
+                left = i + 1; 
+                # right = len(num) - 1
+                result_idx = self.twoSum(num[left:], -num[i])
+                for each_idx in result_idx:  # 数组后方切片后给twoSum
+                    each_result = [num[i], num[each_idx[0]+(i+1)], num[each_idx[1]+(i+1)]]
+                    if str(each_result) not in res:
+                        res[str(each_result)] = each_result
+        for value in res.values():
+            result.append(value)
+        return result    
+--------------------- 
+作者：Rude3knife 
+来源：CSDN 
+原文：https://blog.csdn.net/qqxx6661/article/details/77104862 
+版权声明：本文为博主原创文章，转载请附上博文链接！
+
+'''

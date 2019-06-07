@@ -53,3 +53,15 @@ def d():
     print('d')
 print(d())#d
           #None
+'''
+class Solution:
+    def twoSum(self, nums, target):
+        idxDict = dict()
+        idx_list = []
+        for idx, num in enumerate(nums):
+            if target - num in idxDict:
+                idx_list.append([idxDict[target - num], idx])
+            idxDict[num] = idx
+        return idx_list[0]
+#https://blog.csdn.net/qqxx6661/article/details/77104862
+'''
