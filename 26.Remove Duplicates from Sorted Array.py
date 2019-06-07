@@ -44,6 +44,7 @@ class Solution:
 
         return len(nums)
 '''
+'''
 a=[1,2,4]
 for i in a:#IndexError: list index out of range
     print(i)#[1,2,4]
@@ -52,3 +53,13 @@ for i in a:#IndexError: list index out of range
 b=1
 if not [] :
     print(b)
+'''
+class Solution:
+    def removeDuplicates(self, nums):
+        count=0
+        for i in range(1,len(nums)):
+            if nums[i]!=nums[i-1]:
+                count+=1
+                nums[count]=nums[i]
+        return nums
+print(Solution().removeDuplicates([1,1,2,2,3,3,4,4,4,4,5]))
