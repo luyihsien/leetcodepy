@@ -71,9 +71,10 @@ class Solution:
         for i in range(len(num)-2):  # 遍历至倒数第三个，后面两个指针
             if (i == 0 or num[i] > num[i-1]) and num[i] <= 0:  # 只检索不重复并且目标数（第一个数）小于等于0的情况
                 left = i + 1
+                print('left',left)
                 # right = len(num) - 1
                 result_idx = self.twoSum(num[left:], -num[i])
-                print("result_idx",result_idx)
+                print("result_idx",result_idx)#index
                 for each_idx in result_idx:# 数组后方切片后给twoSum
                     each_result = [num[i], num[each_idx[0]+(i+1)], num[each_idx[1]+(i+1)]]
                     print(each_result)
@@ -82,4 +83,14 @@ class Solution:
         for value in res.values():
             result.append(value)
         return result
-print(Solution().threeSum([-3,-3,-2,-1,-1,-1,-1,0,1,1,1,1,2,3,3]))
+print(Solution().threeSum([-4,-3,-3,-3,1,2,3]))
+'''
+print(Solution().threeSum([-4,-3,-3,-3,1,2,3]))
+left 1
+result_idx [[3, 5]]
+[-4, 1, 3]
+left 2
+result_idx [[2, 3]]
+[-3, 1, 2]
+[[-4, 1, 3], [-3, 1, 2]]
+'''
