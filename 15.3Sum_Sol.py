@@ -77,7 +77,7 @@ class Solution:
                 result_idx = self.twoSum(num[left:], -num[i])#傳送位址#要是此class的實例才能用性質
                 print("result_idx",result_idx)#index
                 for each_idx in result_idx:# 数组后方切片后给twoSum
-                    each_result = [num[i], num[each_idx[0]+(i+1)], num[each_idx[1]+(i+1)]]
+                    each_result = [num[i], num[each_idx[0]+(left)], num[each_idx[1]+(left)]]
                     print('each result',each_result)
                     print('res',res)
                     if str(each_result) not in res:#因list不能直接當key#下一次for又是新num[i]故在這裡就要先讀入
@@ -88,7 +88,7 @@ class Solution:
             print(value)
         print(result)
         return result
-print('two sum for 7',Solution().twoSum([1,2,5,2],7))#[[1, 2], [2, 3]]故最好先sort過同3sum
+print('two sum for 7',Solution().twoSum([1,2,2,5],7))#[[1, 2], [2, 3]]故最好先sort過同3sum
 print(Solution().threeSum([-4,-3,-3,-3,0,1,1,1,2,3,4,4,4,4]))#-4之下 1座標4 3座標6 又 0座標3 4座標7
 #result_idx [[6, 8], [3, 9], [3, 10], [3, 11], [3, 12]]
 #each result [-4, 1, 3]
@@ -147,33 +147,3 @@ def a():
 def b(x,y):
     return x+y
 a()#3
-'''
-a[0] [1, 2]
-a[0:1] [[1, 2]]
-two sum for 7 [[1, 2], [2, 3]]
-left 1
-result_idx [[4, 6], [3, 7]]
-each result [-4, 1, 3]
-res {}
-加入字典後 res {'[-4, 1, 3]': [-4, 1, 3]}
-each result [-4, 0, 4]
-res {'[-4, 1, 3]': [-4, 1, 3]}
-加入字典後 res {'[-4, 1, 3]': [-4, 1, 3], '[-4, 0, 4]': [-4, 0, 4]}
-left 2
-result_idx [[3, 4], [2, 5]]
-each result [-3, 1, 2]
-res {'[-4, 1, 3]': [-4, 1, 3], '[-4, 0, 4]': [-4, 0, 4]}
-加入字典後 res {'[-4, 1, 3]': [-4, 1, 3], '[-4, 0, 4]': [-4, 0, 4], '[-3, 1, 2]': [-3, 1, 2]}
-each result [-3, 0, 3]
-res {'[-4, 1, 3]': [-4, 1, 3], '[-4, 0, 4]': [-4, 0, 4], '[-3, 1, 2]': [-3, 1, 2]}
-加入字典後 res {'[-4, 1, 3]': [-4, 1, 3], '[-4, 0, 4]': [-4, 0, 4], '[-3, 1, 2]': [-3, 1, 2], '[-3, 0, 3]': [-3, 0, 3]}
-left 5
-result_idx []
-[-4, 1, 3]
-[-4, 0, 4]
-[-3, 1, 2]
-[-3, 0, 3]
-[[-4, 1, 3], [-4, 0, 4], [-3, 1, 2], [-3, 0, 3]]
-[[-4, 1, 3], [-4, 0, 4], [-3, 1, 2], [-3, 0, 3]]
-3
-'''
