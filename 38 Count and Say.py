@@ -44,14 +44,14 @@ class Solution(object):
         for i in range(len(s)-1):
             print(s[i],s[i+1])
             if s[i] == s[i+1]:
-                print(s[i])
+                print('s[i]',s[i])
                 count += 1
-                print(count)
+                print('count',count)
             else:
                 res += str(count) + str(s[i])
-                print(res)
+                print('res',res)
                 count = 1
-                print(count)
+                print('count',count)
         return res
 print(Solution().countAndSay(8))
 '''

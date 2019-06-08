@@ -70,7 +70,7 @@ class Solution:
         res = dict()
         result = []
         for i in range(len(num)-2):  # 遍历至倒数第三个，后面两个指针
-            if (i == 0 or num[i] > num[i-1]) and num[i] <= 0:  # 只检索不重复并且目标数（第一个数）小于等于0的情况
+            if (i == 0 or num[i] > num[i-1]) and num[i] <= 0:  #num[i]只可能大於或等於num[i-1]因為sort過# 只检索不重复并且目标数（第一个数）小于等于0的情况
                 left = i + 1
                 print('left',left)
                 # right = len(num) - 1

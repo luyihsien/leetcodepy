@@ -65,3 +65,5 @@ class Solution:
             ans[i] = factorials[-1]//(factorials[i]*factorials[rowIndex-i])
         return ans
 print(Solution().getRow(3))
+print(4/2)#整數相除因通常有小數點，故預設
+print(4/4)
