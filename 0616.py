@@ -3,13 +3,17 @@ class Solution:
         """
         Do not return anything, modify arr in-place instead.
         """
-        n=len(arr)
+        a=arr[:]
+        n=len(a)
+
         l=[]
         for i in range(len(arr)-1):
             if arr[i]==0:
                 l.append(i+1)
+        print(l)
         for i in l:
+            print(n)
+            print(i)
             arr.insert(i,0)
-        arr=arr[:n]
         print(arr)
 Solution().duplicateZeros([1,0,2,3,0,4,5,0])
