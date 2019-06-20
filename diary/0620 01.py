@@ -8,7 +8,7 @@ def demo(f):#f為一未呼叫函式
     def f_new(x):#f_new與f 同參數x
         print(f.__name__)
         return f(x)
-    return f_new#可看作tmp的function
+    return f_new#可被return看作tmp的function#可看作訂在func內的變數
 f=demo(test1)
 f(2)#test1
 #print(f(2))
