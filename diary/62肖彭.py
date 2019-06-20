@@ -42,6 +42,8 @@ def a(*args):#*args與args不同 args是tuple
 a(1,2,3)
 '''
 (1, 2, 3)
+1 2 3
 6
+1 2 3
 '''
 #b((1,2,3))#TypeError: b() missing 2 required positional arguments: 'y' and 'z'
