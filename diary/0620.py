@@ -33,7 +33,7 @@ class Rectangle:
 
     @property
     def width(self):
-        return self.__length
+        return self.__width
 
     @width.setter
     def width(self, width):
@@ -44,8 +44,7 @@ rec=Rectangle(4,2)
 print(rec.area())
 rec.width=10
 print(rec.area(),'hi')#依然16#故知rec.__width與rec.width不同，此處誤把意思以為成多了一個新定義變數width(不是__width)其值為10，故area依舊去__width拿，依然是拿到2
-rec.width=4
-print(rec.area())
+rec.width=-4
 '''
 Traceback (most recent call last):
 -16
