@@ -24,7 +24,7 @@ def test3(x,y):
     return (x,y)
 print(test3(1,2))#此刻才呼叫#test3 return (1,2)
 def b(x,y,z):
-    print(x,y,z)
+    print(x+y+z)
 def a(x,y,z):
     print(x,y)#可供內部呼叫
     return b(x,y,z)
