@@ -19,9 +19,9 @@ class Rectangle:
         self.__length=length
         self.__width=width
     def perimeter(self):
-        return 2*(self.length+self.width)
+        return 2*(self.__length+self.__width)
     def area(self):
-        return self.length*self.width
+        return self.__length*self.__width
     @property
     def length(self):
         return self.__length
@@ -43,8 +43,8 @@ class Rectangle:
 rec=Rectangle(4,2)
 print(rec.area())
 rec.width=10
-print(rec.area())
-rec.width=-4
+print(rec.area(),'hi')#依然16#故知rec.__width與rec.width不同，此處誤把意思以為成多了一個新定義變數width(不是__width)其值為10，故area依舊去__width拿，依然是拿到2
+rec.width=4
 print(rec.area())
 '''
 Traceback (most recent call last):
