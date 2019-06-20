@@ -37,3 +37,7 @@ def a(*args):
     print(args)
     return b(*args)
 a(1,2,3)
+'''
+(1, 2, 3)
+6
+'''
