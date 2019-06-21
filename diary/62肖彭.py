@@ -37,7 +37,7 @@ a(1,2,3)
 def a(*args):#*args與args不同 args是tuple
     print(args)#(1, 2, 3)
     print(*args)#1 2 3
-    return b(*args)#想成just like在呼叫時傳入剛好符合的參數數量(呼叫函數本該如此)(ex:1 2 3)
+    return b(*args)#想成just like在呼叫時傳入剛好符合的參數數量(呼叫函數本該如此)(ex:1 2 3)其操作全權交給被裝飾器呼叫置入的函數負責，而不是靠裝飾器本身
     #return b(args)#TypeError: b() missing 2 required positional arguments: 'y' and 'z'
 a(1,2,3)
 '''
