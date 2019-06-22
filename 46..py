@@ -16,6 +16,8 @@ class Solution:
             res.append(path)
             print('res',res)
             return
+        print('nums',nums)
+
 
         for i in nums:
             if i not in path:
@@ -27,7 +29,7 @@ class Solution:
                 c=c+1
                 print(c)
                 self.dfs(nums, b, res)
-                print('pop前path',path)
+                print('pop前path',path,'c',c)
                 path.pop()
                 print('pop後path',path)
 Solution().permute([1,2,3])
