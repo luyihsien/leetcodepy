@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28735867-df25-4d6d-9b67-4613924b873b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/46..py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/31.Next Permutation.py" afterPath="$PROJECT_DIR$/31.Next Permutation.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,7 +22,7 @@
     <SUITE FILE_PATH="coverage/leeetcodepy$two_sum.coverage" NAME="two_sum Coverage Results" MODIFIED="1557644928019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leeetcodepy$5063_Leetcode_compet_0519_1.coverage" NAME="5063 Leetcode_compet_0519-1 Coverage Results" MODIFIED="1558234800010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leeetcodepy$118_.coverage" NAME="118. Coverage Results" MODIFIED="1559485424226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/leeetcodepy$31_Next_Permutation.coverage" NAME="31.Next Permutation Coverage Results" MODIFIED="1561184008356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/leeetcodepy$31_Next_Permutation.coverage" NAME="31.Next Permutation Coverage Results" MODIFIED="1561185448931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leeetcodepy$test.coverage" NAME="test Coverage Results" MODIFIED="1557930362544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leeetcodepy$2_add_two_number_Sol.coverage" NAME="2.add_two_number_Sol Coverage Results" MODIFIED="1558189108631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leeetcodepy$27Remone_Element_.coverage" NAME="27Remone Element. Coverage Results" MODIFIED="1558831093769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -87,6 +89,7 @@
     <SUITE FILE_PATH="coverage/leeetcodepy$fib.coverage" NAME="fib Coverage Results" MODIFIED="1557676656027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leeetcodepy$1053_Previous_Permutation_With_One_Swap.coverage" NAME="1053 Previous Permutation With One Swap Coverage Results" MODIFIED="1559042134671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leeetcodepy$Numbers_and_Ranges.coverage" NAME="Numbers and Ranges Coverage Results" MODIFIED="1560039352551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/firecode io" />
+    <SUITE FILE_PATH="coverage/leeetcodepy$46_.coverage" NAME="46. Coverage Results" MODIFIED="1561194368783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leeetcodepy$27_.coverage" NAME="27. Coverage Results" MODIFIED="1558333845196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leeetcodepy$05__28.coverage" NAME="05[]28 Coverage Results" MODIFIED="1559436447859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/technique/list" />
     <SUITE FILE_PATH="coverage/leeetcodepy$0602_2.coverage" NAME="0602-2 Coverage Results" MODIFIED="1559446107910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -160,11 +163,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="31.Next Permutation.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="31.Next Permutation.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/31.Next Permutation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+            <state relative-caret-position="471">
+              <caret line="54" column="43" lean-forward="false" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="46..py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/46..py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="30" column="37" lean-forward="false" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -205,7 +218,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/1051.py" />
         <option value="$PROJECT_DIR$/0602-1.py" />
         <option value="$PROJECT_DIR$/0602-2.py" />
         <option value="$PROJECT_DIR$/0602.py" />
@@ -256,6 +268,7 @@
         <option value="$PROJECT_DIR$/11.Container.py" />
         <option value="$PROJECT_DIR$/31.test.py" />
         <option value="$PROJECT_DIR$/31.Next Permutation.py" />
+        <option value="$PROJECT_DIR$/46..py" />
       </list>
     </option>
   </component>
@@ -442,23 +455,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.31.Next Permutation">
-    <configuration default="false" name="Unittests in 62肖彭.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/diary" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="leeetcodepy" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/diary/62肖彭.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.46.">
     <configuration default="false" name="5.longest Palindromic Substring" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -530,6 +527,25 @@
       <module name="leeetcodepy" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/31.test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="46." type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="leeetcodepy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/46..py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -684,19 +700,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in 62肖彭.py" />
-      <item index="1" class="java.lang.String" itemvalue="Python.5.longest Palindromic Substring" />
-      <item index="2" class="java.lang.String" itemvalue="Python.11.Container" />
-      <item index="3" class="java.lang.String" itemvalue="Python.31.Next Permutation" />
-      <item index="4" class="java.lang.String" itemvalue="Python.31.test" />
+      <item index="0" class="java.lang.String" itemvalue="Python.5.longest Palindromic Substring" />
+      <item index="1" class="java.lang.String" itemvalue="Python.11.Container" />
+      <item index="2" class="java.lang.String" itemvalue="Python.31.Next Permutation" />
+      <item index="3" class="java.lang.String" itemvalue="Python.31.test" />
+      <item index="4" class="java.lang.String" itemvalue="Python.46." />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.31.Next Permutation" />
-        <item index="1" class="java.lang.String" itemvalue="Python.31.test" />
-        <item index="2" class="java.lang.String" itemvalue="Python.11.Container" />
-        <item index="3" class="java.lang.String" itemvalue="Python.5.longest Palindromic Substring" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in 62肖彭.py" />
+        <item index="0" class="java.lang.String" itemvalue="Python.46." />
+        <item index="1" class="java.lang.String" itemvalue="Python.31.Next Permutation" />
+        <item index="2" class="java.lang.String" itemvalue="Python.31.test" />
+        <item index="3" class="java.lang.String" itemvalue="Python.11.Container" />
+        <item index="4" class="java.lang.String" itemvalue="Python.5.longest Palindromic Substring" />
       </list>
     </recent_temporary>
   </component>
@@ -755,7 +771,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.49570817" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3238958" sideWeight="0.67972106" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3238958" sideWeight="0.67972106" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.37392703" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -806,13 +822,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/testss/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testss/a.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -1153,8 +1162,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/31.Next Permutation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+        <state relative-caret-position="471">
+          <caret line="54" column="43" lean-forward="false" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/46..py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="30" column="37" lean-forward="false" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
           <folding />
         </state>
       </provider>

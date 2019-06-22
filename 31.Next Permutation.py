@@ -34,8 +34,9 @@ class Solution:
                     print('min_val',min_val)
                 index = tmp - k
                 print('index',index)
+                print('n-1',n-1)
                 nums[n - 1], nums[index] = nums[index], nums[n - 1]
-                print('nums[n-1]',nums[n-1],'nums[inedx]',nums[index])
+                print('nums[n-1]',nums[n-1],'nums[index]',nums[index])
                 nums[n:] = nums[n:][::-1]
                 print('nus[n:]',nums[n:])
                 print('nums',nums)
@@ -50,6 +51,8 @@ class Solution:
 print(Solution().nextPermutation([1,2,3,2,1]))
 print(Solution().nextPermutation([1,2,3,2,1,4]))
 print(Solution().nextPermutation([4,3,2,1]))
+print(Solution().nextPermutation([1,1,3,2,1]))
+print(Solution().nextPermutation([1,1,4,3,2]))
 record=[]
 nums=[1,2,3,2,1]
 n=len(nums)-1
