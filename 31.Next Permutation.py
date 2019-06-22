@@ -14,22 +14,22 @@ class Solution:
     def nextPermutation(self, nums) -> None:
         n = len(nums) - 1#座標
         print('init n=',n)
-        tmp = n
+        tmp = n#保留目前的n而不是n開始被往下扣以後
         print('init tmp=',tmp)
         record = []
         print('init record=',record)
         while n > 0:
             print('nums[n]',nums[n],'nums[n-1]',nums[n-1])
-            record.append(nums[n])
             if nums[n] > nums[n - 1]:
                 k = 0
-                #record.append(nums[n])#why直接一直增元素??#他不是下方else的record
+                record.append(nums[n])#why直接一直增元素??#他不是下方else的record
                 print('record',record)
                 min_val = record[k]
                 print('min_val init=',min_val)
+                print('nums[n-1](判與min_val)',nums[n-1])
                 while min_val <= nums[n - 1]:
                     k += 1
-                    print('k min',k)
+                    print('k',k)
                     min_val = record[k]
                     print('min_val',min_val)
                 index = tmp - k
@@ -40,19 +40,16 @@ class Solution:
                 print('nus[n:]',nums[n:])
                 print('nums',nums)
                 return
-            else:
-                #record.append(nums[n])
+            else:#nums[n]<=nums[n-1]
+                record.append(nums[n])
                 print('else的record',record)
             n -= 1
-        nums.reverse()
+        print('nums未reverse',nums)
+        nums.reverse()#最大的那種，倒過來變最小
         print('nums',nums)
 print(Solution().nextPermutation([1,2,3,2,1]))
 print(Solution().nextPermutation([1,2,3,2,1,4]))
+print(Solution().nextPermutation([4,3,2,1]))
 record=[]
 nums=[1,2,3,2,1]
 n=len(nums)-1
-while n > 0:
-    if nums[n] > nums[n - 1]:
-        k = 0
-        record.append(nums[n])
-        print('record k',record[k])
