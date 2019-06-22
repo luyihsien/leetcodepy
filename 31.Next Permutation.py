@@ -12,23 +12,35 @@
 '''
 class Solution:
     def nextPermutation(self, nums) -> None:
-        n = len(nums) - 1
+        n = len(nums) - 1#座標
+        print('init n=',n)
         tmp = n
+        print('init tmp=',tmp)
         record = []
+        print('init record=',record)
         while n > 0:
             if nums[n] > nums[n - 1]:
                 k = 0
                 record.append(nums[n])
+                print('record',record)
                 min_val = record[k]
+                print('min_val init=',min_val)
                 while min_val <= nums[n - 1]:
                     k += 1
+                    print('k min',k)
                     min_val = record[k]
+                    print('min_val',min_val)
                 index = tmp - k
+                print('index',index)
                 nums[n - 1], nums[index] = nums[index], nums[n - 1]
+                print('nums[n-1]',nums[n-1],'nums[inedx]',nums[index])
                 nums[n:] = nums[n:][::-1]
+                print('nums',nums)
                 return
             else:
                 record.append(nums[n])
+                print('record',record)
             n -= 1
         nums.reverse()
-Solution().nextPermutation()
+        print('nums',nums)
+print(Solution().nextPermutation([1,2,3,2,1]))
