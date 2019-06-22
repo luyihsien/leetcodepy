@@ -19,9 +19,11 @@ class Solution:
         record = []
         print('init record=',record)
         while n > 0:
+            print('nums[n]',nums[n],'nums[n-1]',nums[n-1])
+            record.append(nums[n])
             if nums[n] > nums[n - 1]:
                 k = 0
-                record.append(nums[n])
+                #record.append(nums[n])#why直接一直增元素??#他不是下方else的record
                 print('record',record)
                 min_val = record[k]
                 print('min_val init=',min_val)
@@ -35,12 +37,22 @@ class Solution:
                 nums[n - 1], nums[index] = nums[index], nums[n - 1]
                 print('nums[n-1]',nums[n-1],'nums[inedx]',nums[index])
                 nums[n:] = nums[n:][::-1]
+                print('nus[n:]',nums[n:])
                 print('nums',nums)
                 return
             else:
-                record.append(nums[n])
-                print('record',record)
+                #record.append(nums[n])
+                print('else的record',record)
             n -= 1
         nums.reverse()
         print('nums',nums)
 print(Solution().nextPermutation([1,2,3,2,1]))
+print(Solution().nextPermutation([1,2,3,2,1,4]))
+record=[]
+nums=[1,2,3,2,1]
+n=len(nums)-1
+while n > 0:
+    if nums[n] > nums[n - 1]:
+        k = 0
+        record.append(nums[n])
+        print('record k',record[k])
