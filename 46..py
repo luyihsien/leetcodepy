@@ -1,3 +1,4 @@
+'''
 c = 0
 class Solution:
     def permute(self, nums):
@@ -34,6 +35,7 @@ class Solution:
                 print('i最後',i)
                 #print('num最後', nums, 'b', b, 'res', res)
 Solution().permute([1,2,3])
+'''
 '''
 作者：zong_mingyang
 链接：https: // leetcode - cn.com / problems / permutations/ solution / quan - pai - lie - by - zong_mingyang /
