@@ -53,6 +53,9 @@ print(Solution().nextPermutation([1,2,3,2,1,4]))
 print(Solution().nextPermutation([4,3,2,1]))
 print(Solution().nextPermutation([1,1,3,2,1]))
 print(Solution().nextPermutation([1,1,4,3,2]))
+print(Solution().nextPermutation([1,2,4,3,2,1]))
 record=[]
 nums=[1,2,3,2,1]
 n=len(nums)-1
+record.reverse()
+print(record)
