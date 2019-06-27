@@ -31,3 +31,18 @@ class Solution:#自己的正確答案
                     nums[n],nums[i]=nums[i],nums[n]
                     nums[n+1:]=nums[n+1:][::-1]
                     break
+reversed(a[3:])#None
+a = [1, 2, 3]
+b = a
+del a[:]
+print(b)#[]
+
+a = [1, 2, 3]
+b = a
+a = []
+print(b)#[1, 2, 3]
+a=[1,2,3]
+b=a
+b=[]
+del b[:]
+print(a)#皆[1,2,3] 因是b指針指向a不是a指針指向b
