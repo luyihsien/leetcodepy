@@ -11,3 +11,6 @@ class Solution:
             for i in range(len(nums)-1,n,-1):
                 if nums[n]<nums[i]:
                     nums[n],nums[i]=nums[i],nums[n]
+a=[1,2,3,4,5]
+a[3:]=a[3:].reverse()#TypeError: can only assign an iterable
+print(a)
