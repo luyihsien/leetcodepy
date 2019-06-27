@@ -14,3 +14,5 @@ class Solution:
 a=[1,2,3,4,5]
 a[3:].reverse()#TypeError: can only assign an iterable
 print(a)#[1, 2, 3, 4, 5]
+a[3:][::-1]
+print(a)#[1, 2, 3, 4, 5]
