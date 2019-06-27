@@ -12,5 +12,5 @@ class Solution:
                 if nums[n]<nums[i]:
                     nums[n],nums[i]=nums[i],nums[n]
 a=[1,2,3,4,5]
-a[3:]=a[3:].reverse()#TypeError: can only assign an iterable
-print(a)
+a[3:].reverse()#TypeError: can only assign an iterable
+print(a)#[1, 2, 3, 4, 5]
