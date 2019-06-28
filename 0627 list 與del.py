@@ -38,3 +38,8 @@ d=[4,5,6]
 del c[:]
 print(c)
 print(d)
+c=[1,2,3]
+c[:][::-1]
+print(c)
+c[:]=c[:][::-1]
+print(c)
