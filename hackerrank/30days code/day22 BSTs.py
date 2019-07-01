@@ -5,7 +5,6 @@ class Node:
     def __init__(self,data):
         self.right=self.left=None
         self.data=data
-'''
 class Solution:
     def insert(self,root,data):
         #global c 加在這無效
@@ -14,34 +13,12 @@ class Solution:
             return Node(data)
         else:
             if data<=root.data:
-                print('cur=self.insert(root.left,data)')
                 cur=self.insert(root.left,data)
-                global c
-                c=c+1
-                print('c',c)
-                if root.right==None:
-                    print('None')
-                else:
-                    print('root.right=cur',(root.right).data)
-                if cur==None:
-                    print('cur',None)
-                else:
-                    print('cur',cur.data)
+                root.left=cur
             else:
                 print('cur=self.insert(root.right,data)')
                 cur=self.insert(root.right,data)
-                if root.left==None:
-                    print('None')
-                else:
-                    print('root.left=cur',(root.left).data)
-                #global c#SyntaxError: name 'c' is used prior to global declaration
-                c=c+1
-                print('c',c)
                 root.right=cur
-                if cur==None:
-                    print('cur',None)
-                else:
-                    print('cur',cur.data)
         return root
 T=int(input())
 myTree=Solution()
@@ -51,14 +28,16 @@ for i in range(T):
     root=myTree.insert(root,data)
 print('root.data',root.data)#3
 print('root.right',root.right.data)#5
-print('root.right.righ',(root.right.right).data)#6
-print('root.left',root.left.data)
+print('root.right.right',(root.right.right).data)#6
+print(root.left)#
+print('root.left',root.left.data)#2
+
 #AttributeError: 'NoneType' object has no attribute 'data'
 #print((root.left).data,((root.left).left).data)
 
 
-'''
 
+'''
 class Solution:
     def insert(self, root, data):
         if root==None:
@@ -81,3 +60,4 @@ print('root.right',root.right.data)#AttributeError: 'NoneType' object has no att
 print('root.right.righ',(root.right.right).data)#6
 #print(root.left.data)#AttributeError: 'NoneType' object has no attribute 'data'
 #print((root.left).data,((root.left).left).data)
+'''
