@@ -14,11 +14,17 @@ class Solution:
         else:
             if data<=root.data:
                 cur=self.insert(root.left,data)
+                print('cur',cur,cur.data)
+                if cur.left:
+                    print('cur.left.data',cur.left.data,'{}cur的left的data為{}'.format(cur.data,cur.left.data))
                 root.left=cur
             else:
                 print('cur=self.insert(root.right,data)')
                 cur=self.insert(root.right,data)
-                root.right=cur
+                print('cur', cur,cur.data)
+                if cur.right:
+                    print('cur.right.data',cur.right.data,'{}cur的right的data為{}'.format(cur.data,cur.right.data))
+                root.right=cur#忘了return root的重要了
         return root
 T=int(input())
 myTree=Solution()
@@ -26,12 +32,13 @@ root=None
 for i in range(T):
     data=int(input())#data此名字在此之前都沒出現過
     root=myTree.insert(root,data)
+'''
 print('root.data',root.data)#3
 print('root.right',root.right.data)#5
 print('root.right.right',(root.right.right).data)#6
 print(root.left)#
 print('root.left',root.left.data)#2
-
+'''
 #AttributeError: 'NoneType' object has no attribute 'data'
 #print((root.left).data,((root.left).left).data)
 
