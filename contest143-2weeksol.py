@@ -37,8 +37,7 @@ def transname (num):
         else:#bits%2==0
             #print('num ^ ((1 << (bits - 1)) - 1)',num ^ ((1 << (bits - 1)) - 1))
             #return num ^ ((1 << (bits - 1)) - 1)
-            print('(1 << (bits))-num-1',(1 << (bits))-num-1)
-            return (1 << (bits))-num-1
+            return num^((1<<(bits-1))-1)
 class Solution:
     def pathInZigZagTree(self, label):
         realname = transname (label)
