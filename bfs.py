@@ -1,3 +1,4 @@
+'''
 d={'1':'s','2':{'t','e'}}
 for i in d['2']:
     print(i)
@@ -25,6 +26,7 @@ G={'A':{'B','D'},
    'H':{}
    }
 print(bfs(G,'A'))
+'''
 def bfs(g,s):
     q,v=[s],[s]
     while q:
