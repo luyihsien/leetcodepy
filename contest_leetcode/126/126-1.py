@@ -8,9 +8,9 @@ class Solution(object):
         lts='abcdefghijklmnopqrstuvwxyz'
         ans=[]
         for lt in lts:
-            num=min(s.count(lt) for s in A)
-            print('num',num)
-            ans.extend([lt]*num)
-            print('ans',ans)
+            a=[]
+            for s in A:
+                a.append(s.count(lt))
+                ans.extend(min(a)*[lt])
         return ans
-Solution().commonChars(["bella","label","roller"])
+print(Solution().commonChars(["bella","label","roller"]))
