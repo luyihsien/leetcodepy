@@ -14,3 +14,6 @@ class Solution(object):
                 ans.extend(min(a)*[lt])
         return ans
 print(Solution().commonChars(["bella","label","roller"]))
+'''
+['a', 'a', 'b', 'b', 'e', 'e', 'e', 'l', 'l', 'l', 'l', 'l', 'l']
+'''
