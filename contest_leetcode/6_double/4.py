@@ -4,15 +4,27 @@ class Solution:
         usage=set()
         for i in range(len(str1)):
             if str1[i] not in convert:
+                print('convert',convert)
                 convert[str1[i]]=str2[i]
             else:
                 if str2[i]!=convert[str1[i]]:
+                    print('convert',convert)
                     return False
             usage.add(str2[i])
+            print('usage',usage,len(usage))
+            print('convert',convert)
         if len(usage)==26 and str1!=str2:
             return False
         return True
 a='abcdefghijklmnopqrstuvwxyz'
 b=a[::-1]
-
-Solution().canConvert(a,)
+print(b)
+c='abcd'
+d='bcda'
+[].
+print(Solution().canConvert(a,b))
+print(Solution().canConvert(c,d))
+'''
+"abcdefghijklmnopqrstuvwxyz"
+"bcdefghijklmnopqrstuvwxyza"
+'''
