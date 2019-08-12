@@ -6,25 +6,33 @@ class Solution:#
         res = 0
         count = collections.Counter()
         countChar = collections.Counter(s)
+        print('countChar',countChar)
         start = 0
         maxCount = 0
         maxChar = s[0]
 
         for right in range(len(s)):
             count[s[right]] += 1
-            print('count[s[right]]',count[s[right]])
+            print('count',count,'count[s[right]]',count[s[right]],'s[right]',s[right])
             maxCount = max(count[s[right]], maxCount)
             print('maxcount',maxCount)
-
-            while right - start + 1 - maxCount > 1:
+            print('right - start + 1 - maxCount',right - start + 1 - maxCount)
+            while right - start + 1 - maxCount > 1:#我可以接受目前量之下透支一個且繼續計算，但兩個我不行#right很單純的一直往前衝
                 count[s[start]] -= 1
                 start += 1
             print('count.items()',count.items(),'count',count)
             maxChar = max(count.items(), key=lambda x: x[1])[0]
+            print('maxchar',maxChar)
+            print('right',right,'start',start,'right - start + 1',right - start + 1,'res',res)
             if right - start + 1 > res:
                 res = right - start + 1
+            print('res',res)
         return min(res, countChar[maxChar])
 Solution().maxRepOpt1('ababa')
+
+
+
+
 #https://leetcode.com/problems/swap-for-longest-repeated-character-substring/discuss/355852/Python-Groupby
 #groupby function
 class Solution:
