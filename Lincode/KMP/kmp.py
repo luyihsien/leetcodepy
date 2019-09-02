@@ -5,9 +5,12 @@ class KMP:
 
         for i in range(1, len(pattern)):
             j = ret[i - 1]
+            print('j',j)
             while j > 0 and pattern[j] != pattern[i]:
+                print('j',j)
                 j = ret[j - 1]
             ret.append(j + 1 if pattern[j] == pattern[i] else j)
+            print('ret',ret)
         return ret
 
     def search(self, T, P):
@@ -47,4 +50,7 @@ def test():
 
     print("all test pass")
 '''
+p1 = "aa"
+t1 = "aaaaaaaa"
 print(KMP().partial('ababc'))
+print(KMP().search(t1, p1))#顯示每個出現的起點位置

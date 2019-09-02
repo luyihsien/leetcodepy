@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28735867-df25-4d6d-9b67-4613924b873b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lincode/KMP/KMP-1.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Lincode/13. 字符串查找.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Lincode/157. 判断字符串是否没有重复字符.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Lincode/1650. 合法文章.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Lincode/53.翻轉字符串中的單詞.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Lincode/rotate.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Lincode/水仙花數.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Lincode/落單的數.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lincode/KMP/kmp.py" afterPath="$PROJECT_DIR$/Lincode/KMP/kmp.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,6 +55,7 @@
     <SUITE FILE_PATH="coverage/leeetcodepy$bintooct.coverage" NAME="bintooct Coverage Results" MODIFIED="1565861151538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/contest_leetcode/130" />
     <SUITE FILE_PATH="coverage/leeetcodepy$1027.coverage" NAME="1027 Coverage Results" MODIFIED="1566303958623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leeetcodepy$Unittests_in_closure_py__1_.coverage" NAME="Unittests in closure.py (1) Coverage Results" MODIFIED="1559719832338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day_test" />
+    <SUITE FILE_PATH="coverage/leeetcodepy$KMP_1.coverage" NAME="KMP-1 Coverage Results" MODIFIED="1567414533709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lincode/KMP" />
     <SUITE FILE_PATH="coverage/leeetcodepy$Unittests_in_closure_py.coverage" NAME="Unittests in closure.py Coverage Results" MODIFIED="1559719837186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/function" />
     <SUITE FILE_PATH="coverage/leeetcodepy$Q2_.coverage" NAME="Q2 數列的四則運算 Coverage Results" MODIFIED="1562294012168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/math_brain" />
     <SUITE FILE_PATH="coverage/leeetcodepy$0608.coverage" NAME="0608 Coverage Results" MODIFIED="1559968418135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -168,6 +178,7 @@
     <SUITE FILE_PATH="coverage/leeetcodepy$1026_sol.coverage" NAME="1026_sol Coverage Results" MODIFIED="1567049027510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leeetcodepy$2_sol.coverage" NAME="2_sol Coverage Results" MODIFIED="1566802533893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/151" />
     <SUITE FILE_PATH="coverage/leeetcodepy$53_.coverage" NAME="53.翻轉字符串中的單詞 Coverage Results" MODIFIED="1567389983680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lincode" />
+    <SUITE FILE_PATH="coverage/leeetcodepy$kmp.coverage" NAME="kmp Coverage Results" MODIFIED="1567411061629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Lincode/KMP" />
     <SUITE FILE_PATH="coverage/leeetcodepy$0602_1.coverage" NAME="0602-1 Coverage Results" MODIFIED="1559445712639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leeetcodepy$0630.coverage" NAME="0630 Coverage Results" MODIFIED="1561859120820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leeetcodepy$20190705__1_.coverage" NAME="20190705 (1) Coverage Results" MODIFIED="1562336621968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/knap" />
@@ -214,18 +225,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="53.翻轉字符串中的單詞.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Lincode/53.翻轉字符串中的單詞.py">
+      <file leaf-file-name="53.翻轉字符串中的單詞.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lincode/青銅/53.翻轉字符串中的單詞.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="147">
-              <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+              <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kmp.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lincode/KMP/kmp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KMP-1.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Lincode/KMP/KMP-1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="157. 判断字符串是否没有重复字符.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lincode/157. 判断字符串是否没有重复字符.py">
+        <entry file="file://$PROJECT_DIR$/Lincode/青銅/157. 判断字符串是否没有重复字符.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -235,9 +266,9 @@
         </entry>
       </file>
       <file leaf-file-name="13. 字符串查找.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lincode/13. 字符串查找.py">
+        <entry file="file://$PROJECT_DIR$/Lincode/青銅/13. 字符串查找.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
+            <state relative-caret-position="315">
               <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
@@ -245,7 +276,7 @@
         </entry>
       </file>
       <file leaf-file-name="1650. 合法文章.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lincode/1650. 合法文章.py">
+        <entry file="file://$PROJECT_DIR$/Lincode/青銅/1650. 合法文章.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
               <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
@@ -270,8 +301,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/0812_fib.py" />
-        <option value="$PROJECT_DIR$/0812/0812_fib.py" />
         <option value="$PROJECT_DIR$/contest_leetcode/149/149-1.py" />
         <option value="$PROJECT_DIR$/125/125-1.py" />
         <option value="$PROJECT_DIR$/125/125-1_sol.py" />
@@ -321,6 +350,8 @@
         <option value="$PROJECT_DIR$/Lincode/13. 字符串查找.py" />
         <option value="$PROJECT_DIR$/Lincode/1650. 合法文章.py" />
         <option value="$PROJECT_DIR$/Lincode/53.翻轉字符串中的單詞.py" />
+        <option value="$PROJECT_DIR$/Lincode/KMP/kmp.py" />
+        <option value="$PROJECT_DIR$/Lincode/KMP/KMP-1.py" />
       </list>
     </option>
   </component>
@@ -392,6 +423,28 @@
               <option name="myItemId" value="Lincode" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="青銅" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leeetcodepy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leeetcodepy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lincode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KMP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -446,14 +499,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\luyih\Desktop\search_job\programmer diary\leeetcodepy" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\luyih\Desktop\search_job\programmer diary\leeetcodepy\Lincode\青銅" />
       <recent name="C:\Users\luyih\Desktop\search_job\programmer diary\leeetcodepy\0812" />
       <recent name="C:\Users\luyih\Desktop\search_job\programmer diary\leeetcodepy\contest_leetcode\148" />
       <recent name="C:\Users\luyih\Desktop\search_job\programmer diary\leeetcodepy\garden" />
       <recent name="C:\Users\luyih\Desktop\search_job\programmer diary\leeetcodepy\hackerrank\30days code" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\luyih\Desktop\search_job\programmer diary\leeetcodepy" />
     </key>
   </component>
@@ -469,45 +522,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.53.翻轉字符串中的單詞">
-    <configuration default="false" name="rotate" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Lincode" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="leeetcodepy" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lincode/rotate.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="水仙花數" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Lincode" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="leeetcodepy" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lincode/水仙花數.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.KMP-1">
     <configuration default="false" name="1." type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -559,7 +574,45 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="leeetcodepy" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lincode/53.翻轉字符串中的單詞.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\luyih\Desktop\search_job\programmer diary\leeetcodepy\Lincode\青銅\53.翻轉字符串中的單詞.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="kmp" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Lincode/KMP" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="leeetcodepy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lincode/KMP/kmp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="KMP-1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Lincode/KMP" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="leeetcodepy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lincode/KMP/KMP-1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -734,19 +787,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.heap_practice" />
-      <item index="1" class="java.lang.String" itemvalue="Python.rotate" />
-      <item index="2" class="java.lang.String" itemvalue="Python.水仙花數" />
-      <item index="3" class="java.lang.String" itemvalue="Python.1." />
-      <item index="4" class="java.lang.String" itemvalue="Python.2." />
-      <item index="5" class="java.lang.String" itemvalue="Python.53.翻轉字符串中的單詞" />
+      <item index="1" class="java.lang.String" itemvalue="Python.1." />
+      <item index="2" class="java.lang.String" itemvalue="Python.2." />
+      <item index="3" class="java.lang.String" itemvalue="Python.53.翻轉字符串中的單詞" />
+      <item index="4" class="java.lang.String" itemvalue="Python.kmp" />
+      <item index="5" class="java.lang.String" itemvalue="Python.KMP-1" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.53.翻轉字符串中的單詞" />
-        <item index="1" class="java.lang.String" itemvalue="Python.2." />
-        <item index="2" class="java.lang.String" itemvalue="Python.1." />
-        <item index="3" class="java.lang.String" itemvalue="Python.rotate" />
-        <item index="4" class="java.lang.String" itemvalue="Python.水仙花數" />
+        <item index="0" class="java.lang.String" itemvalue="Python.KMP-1" />
+        <item index="1" class="java.lang.String" itemvalue="Python.kmp" />
+        <item index="2" class="java.lang.String" itemvalue="Python.53.翻轉字符串中的單詞" />
+        <item index="3" class="java.lang.String" itemvalue="Python.2." />
+        <item index="4" class="java.lang.String" itemvalue="Python.1." />
       </list>
     </recent_temporary>
   </component>
@@ -796,7 +849,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="1" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37982833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -856,20 +909,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/125/125-1_sol.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contest_leetcode/130/130-1_sol.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/contest_leetcode/130/bintooct.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -1129,21 +1168,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lincode/落單的數.py">
+    <entry file="file://$PROJECT_DIR$/Lincode/青銅/落單的數.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="58" lean-forward="false" selection-start-line="0" selection-start-column="58" selection-end-line="0" selection-end-column="58" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lincode/水仙花數.py">
+    <entry file="file://$PROJECT_DIR$/Lincode/青銅/水仙花數.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="1" column="9" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lincode/rotate.py">
+    <entry file="file://$PROJECT_DIR$/Lincode/青銅/rotate.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="35" column="11" lean-forward="false" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
@@ -1189,7 +1230,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lincode/1650. 合法文章.py">
+    <entry file="file://$PROJECT_DIR$/Lincode/青銅/1650. 合法文章.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
@@ -1197,7 +1238,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lincode/157. 判断字符串是否没有重复字符.py">
+    <entry file="file://$PROJECT_DIR$/Lincode/青銅/157. 判断字符串是否没有重复字符.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1205,18 +1246,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lincode/13. 字符串查找.py">
+    <entry file="file://$PROJECT_DIR$/Lincode/青銅/53.翻轉字符串中的單詞.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
+        <state relative-caret-position="147">
+          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lincode/青銅/13. 字符串查找.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
           <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lincode/53.翻轉字符串中的單詞.py">
+    <entry file="file://$PROJECT_DIR$/Lincode/KMP/kmp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        <state relative-caret-position="380">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lincode/KMP/KMP-1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
