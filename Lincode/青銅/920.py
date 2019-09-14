@@ -46,3 +46,24 @@ class Solution:
                 if intervals[i][1]>intervals[j][0] or intervals[i][0]<intervals[j][1]:
                     return False
         return True
+"""
+Definition of Interval.
+class Interval(object):
+    def __init__(self, start, end):
+        self.start = start
+        self.end = end
+"""
+
+class Solution:
+    """
+    @param intervals: an array of meeting time intervals
+    @return: if a person could attend all meetings
+    """
+    def canAttendMeetings(self, intervals):
+        n=len(intervals)
+        for i in range(n-1):
+            for j in range(i,n):
+                if intervals[i].start>=intervals[j].end or intervals[i].end<=intervals[j].start:
+                    return False
+        return True
+        # Write your code here

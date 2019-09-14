@@ -26,3 +26,4 @@ class Solution:
         a=sorted(array,key=lambda x:(-x[1],x[0]))
         return a
         # Write your code here
+print(Solution().multiSort([[3,4],[1,2]]))
