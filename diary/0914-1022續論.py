@@ -1,9 +1,11 @@
-def a(x,d={}):
+def a(x,l=[]):
     x=x+1
     print(x)
+    l.append(x)
+    print(l)
     if x==4:
         return x
-    print(x)
+
     #return x
     return a(x)+a(x)
 print(a(1))
