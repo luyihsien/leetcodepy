@@ -1,11 +1,11 @@
-l=[]
-def a(x):
+
+def a(x,l=[]):
     x=x+1
+    l.append(x)
+    print('l', l, 'id', id(l))
     print(x)
     if x==4:
-        global l
-        l.append(x)
-        print(l)
+
         return x
         #return x
 
@@ -26,6 +26,7 @@ print(a(1))
 [4, 4, 4, 4]
 16
 '''
+
 '''
 l=[]
 def a(x):

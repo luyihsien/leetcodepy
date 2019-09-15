@@ -1,6 +1,6 @@
 class Solution:
     def uniquePaths(self, m: int, n: int,d={}) -> int:
-        print('uniqe({},{})'.format(m,n),'d',d)
+        print('uniqe({},{})'.format(m,n),'d',d,'d的id',id(d))
         if m < 1 or n < 1: return 0
         if m == 1 and n == 1: return 1
         if (m, n) in d:#if m,n in d 是不對的，一定要有小括號

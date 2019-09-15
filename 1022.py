@@ -25,17 +25,19 @@ class TreeNode:
         self.right = None
 class Sol:
     ans = 0
-    acc=0
     def sumt(self,root):
-        def dfs(node):
+        def dfs(node,acc):
+            print('acc',id(acc))
+            if node!=None:
+                print('dfs({})'.format(node.val))
             if node is not None:
-                self.acc=self.acc*2+node.val
-                print('acc',self.acc)
+                acc=acc*2+node.val
+                #print('acc',acc,'acc的id',id(acc))
                 if node.left is None and node.right is None:
-                    self.ans+=self.acc
-                dfs(node.left)
-                dfs(node.right)
-        dfs(root)
+                    self.ans+=acc
+                dfs(node.left,acc)
+                dfs(node.right,acc)
+        dfs(root,0)
         return self.ans
         #return self.ans
 
