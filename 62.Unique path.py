@@ -10,3 +10,9 @@ class Solution:
         print('d[({}, {})] = self.uniquePaths({},{}) + self.uniquePaths({},{})'.format(m,n,m-1,n,m,n-1))
         return d[m, n]
 print(Solution().uniquePaths(3,2))
+class Solution:
+    def uniquePaths(self,m,n):
+        if m < 1 or n < 1: return 0
+        if m == 1 and n == 1: return 1
+        return self.uniquePaths(m - 1, n) + self.uniquePaths(m, n - 1)
+print(Solution().uniquePaths(3,2))

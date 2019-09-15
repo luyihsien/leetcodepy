@@ -72,3 +72,41 @@ class Solution:
                         s=i
                         break
         return s+1
+class Solution:
+    """
+    @param nums: an array of integers
+    @return: the number of unique integers
+    """
+    def deduplication(self, nums):
+        if nums==[]:
+            return 0
+        se=set(nums[0])
+        s=0
+        for i in nums:
+            if i not in se:
+                se.add(i)
+                s=s+1
+                nums[s]=i
+        return s
+nums=[1,2,3]
+a=set()
+a.add(nums[0])
+print(a)
+class Solution:
+    """
+    @param nums: an array of integers
+    @return: the number of unique integers
+    """
+    def deduplication(self, nums):
+        if nums==[]:
+            return 0
+        se=set()
+        se.add(nums[0])
+        s=0
+        for i in nums:
+            if i not in se:
+                se.add(i)
+                s=s+1
+                nums[s]=i
+        return s+1
+        # write your code here
