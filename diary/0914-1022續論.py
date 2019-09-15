@@ -1,10 +1,13 @@
-def a(x,l=[]):
+l=0
+def a(x):
     x=x+1
     print(x)
     if x==4:
-        l.append(x)
+        global l
+        l+=x
         print(l)
         return x
+        #return x
 
     #return x
     return a(x)+a(x)
