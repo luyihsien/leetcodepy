@@ -1,9 +1,9 @@
 def a(x,l=[]):
     x=x+1
     print(x)
-    l.append(x)
-    print(l)
     if x==4:
+        l.append(x)
+        print(l)
         return x
 
     #return x
