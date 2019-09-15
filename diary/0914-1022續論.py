@@ -1,10 +1,10 @@
-l=0
+l=[]
 def a(x):
     x=x+1
     print(x)
     if x==4:
         global l
-        l+=x
+        l.append(x)
         print(l)
         return x
         #return x
@@ -12,6 +12,20 @@ def a(x):
     #return x
     return a(x)+a(x)
 print(a(1))
+'''
+2
+3
+4
+[4]
+4
+[4, 4]
+3
+4
+[4, 4, 4]
+4
+[4, 4, 4, 4]
+16
+'''
 '''
 l=[]
 def a(x):
