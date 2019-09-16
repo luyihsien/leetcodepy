@@ -66,7 +66,7 @@ class Solution:
                     l[i] = 0
             cells[:]=l
             cells[0] = cells[-1] = 0
-            d[j+1]=cells[:]
+            d[tuple(cells[:])]=j+1
             print('cells',cells,'d',d)
         return l
 print(Solution().prisonAfterNDays(cells = [0,1,0,1,1,0,0,1], N = 7))

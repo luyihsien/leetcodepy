@@ -60,7 +60,6 @@ class Solution:
 
     def helper(self, head, ans):
         if head is None:
-            print('沒有回傳')
             return
         else:
             self.helper(head.next, ans)
@@ -70,3 +69,25 @@ a=ListNode(5)
 a.next=ListNode(3)
 a.next.next=ListNode(4)
 Solution().reverseStore(a)
+"""
+Definition of ListNode
+class ListNode(object):
+    def __init__(self, val, next=None):
+        self.val = val
+        self.next = next
+"""
+
+class Solution:
+    """
+    @param head: the given linked list
+    @return: the array that store the values in reverse order 
+    """
+    def reverseStore(self, head):
+        if head==None:
+            return [None]
+        while head:
+            l.append(head)
+            head=head.next
+        l.reverse()
+        return l
+        # write your code here
