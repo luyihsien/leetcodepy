@@ -10,3 +10,19 @@
         #fib(i-1)+fib(i-2)
 
 #
+'''
+def fac(n):
+    print('n',n)
+    if n==1:
+        return 1
+    n*fac(n-1)#TypeError: unsupported operand type(s) for *: 'int' and 'NoneType'
+
+fac(10)
+'''
+def fib(i):
+    if i==0 or i==1:
+        return 1
+    fib(i-1)+fib(i-2)
+
+
+print(fib(3))

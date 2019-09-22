@@ -42,3 +42,35 @@ class Solution:
 
 
         # write your code here
+
+
+
+#Definition of ListNode
+class ListNode(object):
+    def __init__(self, val, next=None):
+        self.val = val
+        self.next = next
+
+
+
+class Solution:
+    """
+    @param head: the head of linked list.
+    @return: a middle node of the linked list
+    """
+
+    def middleNode(self, head):
+        l = []
+        while head:
+            l.append(head.val)
+            head=head.next
+            print(l)
+        n = len(l)
+        return l[n // 2]
+
+        # write your code here
+
+h=ListNode(1)
+h.next=ListNode(2)
+h.next.next=ListNode(3)
+print(Solution().middleNode(h))
