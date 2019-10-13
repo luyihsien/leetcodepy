@@ -43,3 +43,32 @@ class Solution:
         a=ListNode(val)
         a.next=head
         return a
+'''
+"""
+Definition of ListNode
+class ListNode(object):
+    def __init__(self, val, next=None):
+        self.val = val
+        self.next = next
+"""
+
+class Solution:
+    """
+    @param head: The head of linked list.
+    @param val: An integer.
+    @return: The head of new linked list.
+    """
+    def insertNode(self, head, val):
+        if head==None:
+            return ListNode(val)
+        while head:
+            if head.val<val:
+                next=head.next
+                head.next=ListNode(val)
+                head.next.next=next
+                break
+        return head
+        # write 
+        your code here
+'''
+print(1>float('-inf'))

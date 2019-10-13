@@ -1,0 +1,11 @@
+A=[3,8,9,7,6]
+print(A[:-1])
+a=set()
+#a.add([1,2,3])
+print(a)
+print(len(a))
+print(list(set((1,2,3))))
+print(set((((1,2,3)))))
+a=set()
+a.add(12)
+print(a)

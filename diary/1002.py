@@ -1,0 +1,7 @@
+print(list(map(str,range(7))))
+s=''.join(('1','2','3'))
+print(type(s))
+a=s.split('1')
+print(a,type(a))
+b='1 2 3'.split()
+print(b)

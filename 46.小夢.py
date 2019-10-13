@@ -1,11 +1,6 @@
-c=0
 class Sol:
     def per(self,nums):
-        global c
-        c=c+1
-        print('第{}次呼叫per(nums)'.format(c))
         if len(nums)<=1:
-            print('return執行完第{}次的遞迴'.format(c),[nums])
             return [nums]
         ans=[]
         for i,num in enumerate(nums):
